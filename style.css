@@ -1,0 +1,89 @@
+.inline-block{
+  display: inline-block;
+  vertical-align: top;
+}
+
+div.logo{
+  width: 23%;
+  padding: 1%;
+  text-align: center;
+}
+
+nav{
+  width: 73%;
+  padding: 1%;
+}
+
+ul{
+  width: 50%;
+  margin-left: auto;
+}
+
+/* CSS heroimage */
+.heroImg{
+  background-image: url("Images/Hero\ Image.png");
+  height: 600px;
+  padding: 25px;
+}
+.content{
+  width: 500px;
+  margin: 0 auto;
+}
+
+/* CSS Footer */
+footer{
+  background-color: #373738;
+  padding: 25px;
+}
+footer ul{
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 500px;
+  padding: 1%;
+}
+/* My UX Skills section coded using CSS flex*/
+.flexContainer{
+  display: flex;
+  margin: 0 5%;
+  width: 33%;
+  flex-direction: column;
+}
+
+/* Projects section coded using CSS flex*/
+#workGrid{
+  margin: 0px 5%;
+  display: grid;
+  min-height: 500px;
+  height: 70vh;
+  grid-template-rows: 50 50%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+  "JTD staynplay"
+  "FTC FTC";
+}
+#JTD{
+  grid-area: JTD;
+  background-image: url("Images/JTD.png")
+}
+#staynplay{
+  grid-area: staynplay;
+  background-image: url("Images/StaynPlay.png")
+}
+#FTC{
+  grid-area: FTC;
+  background-image: url("Images/FTC.png")
+}
+@media only screen and (max-width: 600){
+  .flexContainer{
+    display: flex;
+    margin: 0 5%;
+    width: 100%;
+    flex-direction: column;
+  }
+  .workGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:"JTD" "StaynPlay" "FTC";
+  }
+}
