@@ -1,38 +1,59 @@
-.inline-block{
-  display: inline-block;
-  vertical-align: top;
+
+/* CSS Navigation */
+.logo{
+float: left;
+margin-left: 50px;
 }
 
-div.logo{
-  width: 23%;
-  padding: 1%;
-  text-align: center;
+ul.nav{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-nav{
-  width: 73%;
-  padding: 1%;
+li{
+  display: inline;
+  float: right;
+  margin-top: 30px;
+  margin-right: 50px;
+  padding: 15px;
 }
 
-ul{
-  width: 50%;
-  margin-left: auto;
+body, html{
+  height: 100%;
 }
 
 /* CSS heroimage */
 .heroImg{
-  background-image: url("Images/Hero\ Image.png");
-  height: 600px;
-  padding: 25px;
+  background-image: url("Images/Hero\ Image2.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.herotext{
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 .content{
   width: 500px;
   margin: 0 auto;
 }
+.profilepic{
+  position: absolute;
+  right: 332px;
+  top: 165px;
+  width: 400px;
+  height: 800px;
+}
 
 /* CSS Footer */
 footer{
-  background-color: #373738;
+  background-color: #E5E1F3;
   padding: 25px;
 }
 footer ul{
