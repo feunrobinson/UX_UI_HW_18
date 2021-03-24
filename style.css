@@ -1,12 +1,28 @@
-
+h1 p{
+  font-family: 'Sora', sans-serif;
+}
+h2{
+  font-family: 'Radley',serif;
+}
+#headername{
+  font-size: 64px;
+}
+#headerdescription{
+  font-size: 35px;
+}
+h1{
+  font-size: 30px;
+}
 /* CSS Navigation */
 .logo{
 float: left;
 margin-left: 50px;
 }
 
+
 ul.nav{
   list-style-type: none;
+  color: white;
   margin: 0;
   padding: 0;
 }
@@ -57,9 +73,9 @@ footer{
   padding: 25px;
 }
 footer ul{
-  display: inline-block;
-  vertical-align: top;
-  margin-left: 500px;
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: center;
   padding: 1%;
 }
 /* My UX Skills section coded using CSS flex*/
@@ -75,34 +91,38 @@ footer ul{
 #aboutme{
   text-align: center;
   flex: 33%;
-  padding: 50px;
+  padding: 35px;
 }
+ul.toolbox{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
 #tools{
   flex: 33%;
   padding: 50px;
   text-align: center;
-  align-content: center;
+  line-height: 0;
 }
 #myskills{
   flex: 33%;
-  padding: 50px;
+  padding: 35px;
+  text-align: center;
 }
-.toolboxtop{
-  margin-top: 0;
-}
-.toolboxbottom{
-  padding: 10px;
-}
+
 /* Projects section coded using CSS flex*/
 #workGrid{
   background-color: #2A1B3D;
   color:white;
+  padding: 50px;
 }
 .workGrid{
   margin: 25px;
   display: grid;
   height: 95vh;
   min-height: 500px;
+  padding: 25px;
   grid-template-rows: 50 50%;
   grid-template-columns: 50% 50%;
   grid-template-areas:
